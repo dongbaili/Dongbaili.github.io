@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .main-content {
+            flex: 2;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>个人主页</h1>
+    </header>
+
+    <nav>
+        <a href="#grades">成绩单</a>
+        <a href="#cv">CV</a>
+        <a href="#research">Research Statement</a>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+            <img src="your_photo.jpg" alt="Your Photo">
+            <h2>Your Name</h2>
+            <p>Contact: your.email@example.com</p>
+            <p>School: Your University</p>
+        </div>
+
+        <div class="main-content">
+            <h2>发表的文章</h2>
+            <p>文章内容...</p>
+
+            <h2>合作者</h2>
+            <p>合作者信息...</p>
+
+            <h2>个人技能</h2>
+            <p>技能列表...</p>
+
+            <h2>获奖情况</h2>
+            <p>获奖信息...</p>
+        </div>
+    </div>
+
+    <script>
+        // 可以在此处添加JavaScript代码，以实现更多的交互功能
+    </script>
+
+</body>
+</html>

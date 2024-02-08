@@ -53,8 +53,10 @@
         }
 
         img {
-            max-width: 150px;
-            max-height: 150px;
+            display: block; /* 使图片变为块级元素 */
+            margin: 0 auto; /* 设置左右margin为auto */
+            max-width: 200px;
+            max-height: 200px;
             border-radius: 50%;
         }
     </style>
@@ -74,22 +76,20 @@
 
     <div class="container">
         <div class="sidebar">
-            <img src="images/selfie.jpg" alt="selfie">
             <h2>Dongbai Li</h2>
+            <img src="images/selfie.jpg" alt="selfie">
             <p>ldb22@mails.tsinghua.edu.cn</p>
             <p>Tsinghua University</p>
             <p>Department of Computer Science and Technology</p>
             <ul>
-                <li><a href="#link1">可点击的链接1</a></li>
+                <li><a href="https://openreview.net/profile?id=~Dongbai_Li1">openReview Profile</a></li>
                 <li><a href="#link2">可点击的链接2</a></li>
                 <!-- 添加更多链接 -->
             </ul>
         </div>
 
         <div class="main-content">
-            <p>Hi, I'm a second-year undergraduate student from Tsinghua University, majoring in Computer Science.
-            Now I mainly work with Prof. Peng Cui's lab. My research interest lies in OOD-generalization. 
-            To be specific, I'm now working on two research project focusing on stable learning and data centric active learning.</p>
+            <p>Hello, I'm a second-year undergraduate student at Tsinghua University, pursuing a degree in Computer Science. Currently, I am actively engaged in research within Prof. Peng Cui's lab. My primary research interest centers around Out-of-Distribution (OOD) generalization. Specifically, I am involved in two research projects that explore stable learning and data-centric active learning methodologies.</p>
 
             <h2>Publications</h2>
             <p>1. Yue He, <strong>Dongbai Li</strong>, (co-first authors)  Pengfei Tian, Han Yu, Jiashuo Liu, Hao Zou, Peng Cui. Domain-wise Data Acquisition to Improve Performance under Distribution Shift. <strong>under review.</strong> </p>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fixed Title Bar and Side Bar</title>
+<style>
+/* 固定标题栏样式 */
+.title-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* 固定侧边栏样式 */
+.side-bar {
+  position: fixed;
+  top: 100px; /* 可根据实际情况调整，以适应标题栏高度 */
+  left: 0;
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+/* 内容区域样式 */
+.content {
+  margin-top: 70px; /* 可根据实际情况调整，以适应标题栏和侧边栏高度 */
+  margin-left: 220px; /* 可根据实际情况调整，以适应侧边栏宽度 */
+  padding: 20px;
+}
+
+/* 使内容区域有一些高度以测试滚动效果 */
+.content p {
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+
+<!-- 固定标题栏 -->
+<div class="title-bar">
+  <h1>这是一个固定的标题栏</h1>
+</div>
+
+<!-- 固定侧边栏 -->
+<div class="side-bar">
+  <h2>侧边栏</h2>
+  <ul>
+    <li><a href="#">链接1</a></li>
+    <li><a href="#">链接2</a></li>
+    <li><a href="#">链接3</a></li>
+  </ul>
+</div>
+
+<!-- 内容区域 -->
+<div class="content">
+  <p>这是内容区域。滚动此页面以查看标题栏和侧边栏是否保持固定位置。</p>
+  <!-- 这里可以添加更多内容 -->
+</div>
+
+</body>
+</html>

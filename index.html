@@ -6,27 +6,45 @@
     <title>Dongbai Li' s Homepage</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat';
             margin: 0;
             padding: 0;
         }
-
+        h2{
+            color:#207e62;
+        }
+        p {
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
         header {
+            position:fixed;
             background-color: #333;
             color: white;
-            padding: 10px;
             text-align: center;
+            height:10%;
+            width:100%;
         }
-
+        
+        header h1 {
+            line-height: 0.5; 
+        }
         nav {
+            top:10%;
+            position: fixed;
             background-color: #444;
             color: white;
             padding: 10px;
             display: flex;
             justify-content: space-around;
+            width: 100%;
+            height: 4%;
         }
 
         nav a {
+            display:block;
+            margin-bottom: 10px;
             color: white;
             text-decoration: none;
         }
@@ -41,13 +59,19 @@
         }
 
         .sidebar {
+            position:fixed;
+            top: 150px;
             flex: 1;
             padding: 20px;
             background-color: #f0f0f0;
             width: 200px;
+            height: 600px;
+            border-radius: 20px;
         }
 
         .main-content {
+            margin-top:9%;
+            margin-left: 250px;
             flex: 2;
             padding: 20px;
         }
@@ -61,7 +85,11 @@
         }
         .bold-large {
             font-weight: bold;
-            font-size: large;
+            font-size: 20px;
+            color: #5FD4b1;
+        }
+        .link{
+            color:#207e62;
         }
     </style>
 </head>
@@ -85,7 +113,7 @@
             <p>Tsinghua University</p>
             <p>Department of Computer Science and Technology</p>
             <ul>
-                <li><a href="https://openreview.net/profile?id=~Dongbai_Li1">OpenReview Profile</a></li>
+                <li><a href="https://openreview.net/profile?id=~Dongbai_Li1" class="link">OpenReview Profile</a></li>
                 <!-- 添加更多链接 -->
             </ul>
         </div>

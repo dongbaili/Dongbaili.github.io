@@ -60,13 +60,14 @@
 
         .sidebar {
             position:fixed;
-            margin-top: 12%;
+            margin-top: 10%;
             flex: 1;
             padding: 20px;
             background-color: #f0f0f0;
             width: 17%;
             height: 80%;
             border-radius: 20px;
+            text-align: center;
         }
 
         .main-content {
@@ -76,7 +77,7 @@
             padding: 20px;
         }
 
-        img {
+        .selfie {
             display: block; /* 使图片变为块级元素 */
             margin: 0 auto; /* 设置左右margin为auto */
             max-width: 200px;
@@ -107,11 +108,18 @@
 
     <div class="container">
         <div class="sidebar">
-            <img src="images/selfie.jpg" alt="selfie">
+            <img src="images/selfie.jpg" alt="selfie" class="selfie">
             <h2>Dongbai Li</h2>
-            <p>ldb22@mails.tsinghua.edu.cn</p>
-            <p>Tsinghua University</p>
-            <p>Department of Computer Science and Technology</p>
+            <div>
+                <img src="icons/mail.png" alt="mail" width="20">
+                <p>ldb22@mails.tsinghua.edu.cn</p>
+            </div>
+            <div>
+                <img src="icons/map_pin.png" alt="mail" width="20">
+                <p>Tsinghua University</p>
+                <p>Department of Computer Science and Technology</p>
+            </div>
+            <img src="icons/globe.png" alt="mail" width="20">
             <ul>
                 <li><a href="https://openreview.net/profile?id=~Dongbai_Li1" class="link">OpenReview Profile</a></li>
                 <!-- 添加更多链接 -->
